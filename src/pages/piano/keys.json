@@ -1,0 +1,37 @@
+[
+    {
+        "name": "A",
+        "soundFile": "/src/assets/light.mp3",
+        "color": "white"
+    },
+    {
+        "name": "W",
+        "soundFile": "/src/assets/dark.mp3",
+        "color": "black"
+    },
+    {
+        "name": "D",
+        "soundFile": "/src/assets/light.mp3",
+        "color": "white"
+    },
+    {
+        "name": "F",
+        "soundFile": "/src/assets/light.mp3",
+        "color": "white"
+    },
+    {
+        "name": "T",
+        "soundFile": "/src/assets/dark.mp3",
+        "color": "black"
+    },
+    {
+        "name": "G",
+        "soundFile": "/src/assets/light.mp3",
+        "color": "white"
+    },
+    {
+        "name": "H",
+        "soundFile": "/src/assets/light.mp3",
+        "color": "white"
+    }
+]
