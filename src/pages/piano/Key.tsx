@@ -28,7 +28,8 @@ export const PinaoKey: React.FC<PinaoKeyProps> = ({ name, soundFile, color, trac
 
     window.addEventListener("keypress", player);
     return () => {
-      window.removeEventListener("keydown", player)
+      // ---- here is the bug --- it should be "keypress" not "keydown"
+      window.removeEventListener("keypress", player)
     }
   }, [name, soundFile, trackRecord])
 
