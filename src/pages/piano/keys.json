@@ -5,7 +5,7 @@
         "color": "white"
     },
     {
-        "name": "C#",
+        "name": "H",
         "soundFile": "/src/assets/Cs_note.wav",
         "color": "black"
     },
@@ -15,7 +15,7 @@
         "color": "white"
     },
     {
-        "name": "D#",
+        "name": "I",
         "soundFile": "/src/assets/Ds_note.wav",
         "color": "black"
     },
@@ -30,7 +30,7 @@
         "color": "white"
     },
     {
-        "name": "F#",
+        "name": "J",
         "soundFile": "/src/assets/Fs_note.wav",
         "color": "black"
     },
@@ -40,7 +40,7 @@
         "color": "white"
     },
     {
-        "name": "G#",
+        "name": "K",
         "soundFile": "/src/assets/Gs_note.wav",
         "color": "black"
     },
@@ -50,7 +50,7 @@
         "color": "white"
     },
     {
-        "name": "A#",
+        "name": "L",
         "soundFile": "/src/assets/As_note.wav",
         "color": "black"
     },
