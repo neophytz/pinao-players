@@ -16,7 +16,7 @@ export const Keyboard: React.FC = () => {
     trackArr.map(singleNote => {
       const keyObjext = findSoundFileUsingKey(singleNote, keys) as PinaoKeyProps
       // setSingleKey(keyObjext.soundFile)
-      console.log(typeof keyObjext.soundFile, keyObjext.soundFile)
+      // console.log(typeof keyObjext.soundFile, keyObjext.soundFile)
       playSound(keyObjext.soundFile)
     })
   }
