@@ -1,37 +1,72 @@
 [
     {
-        "name": "A",
-        "soundFile": "/src/assets/light.mp3",
-        "color": "white"
-    },
-    {
-        "name": "W",
-        "soundFile": "/src/assets/dark.mp3",
-        "color": "black"
-    },
-    {
-        "name": "D",
-        "soundFile": "/src/assets/light.mp3",
-        "color": "white"
-    },
-    {
-        "name": "F",
-        "soundFile": "/src/assets/light.mp3",
-        "color": "white"
-    },
-    {
-        "name": "T",
-        "soundFile": "/src/assets/dark.mp3",
-        "color": "black"
-    },
-    {
-        "name": "G",
-        "soundFile": "/src/assets/light.mp3",
+        "name": "C",
+        "soundFile": "/src/assets/C_note.wav",
         "color": "white"
     },
     {
         "name": "H",
-        "soundFile": "/src/assets/light.mp3",
+        "soundFile": "/src/assets/Cs_note.wav",
+        "color": "black"
+    },
+    {
+        "name": "D",
+        "soundFile": "/src/assets/D_note.wav",
         "color": "white"
+    },
+    {
+        "name": "I",
+        "soundFile": "/src/assets/Ds_note.wav",
+        "color": "black"
+    },
+    {
+        "name": "E",
+        "soundFile": "/src/assets/E_note.wav",
+        "color": "white"
+    },
+    {
+        "name": "F",
+        "soundFile": "/src/assets/F_note.wav",
+        "color": "white"
+    },
+    {
+        "name": "J",
+        "soundFile": "/src/assets/Fs_note.wav",
+        "color": "black"
+    },
+    {
+        "name": "G",
+        "soundFile": "/src/assets/G_note.wav",
+        "color": "white"
+    },
+    {
+        "name": "K",
+        "soundFile": "/src/assets/Gs_note.wav",
+        "color": "black"
+    },
+    {
+        "name": "A",
+        "soundFile": "/src/assets/A_note.wav",
+        "color": "white"
+    },
+    {
+        "name": "L",
+        "soundFile": "/src/assets/As_note.wav",
+        "color": "black"
+    },
+    {
+        "name": "B",
+        "soundFile": "/src/assets/B_note.wav",
+        "color": "white"
+    },
+    {
+        "name": "C",
+        "soundFile": "/src/assets/C4_note.wav",
+        "color": "white"
+    },
+    {
+        "name": "M",
+        "soundFile": "/src/assets/Cs_note.wav",
+        "color": "black"
     }
 ]
