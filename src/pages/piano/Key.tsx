@@ -9,11 +9,11 @@ export interface PinaoKeyProps {
   trackRecord: (key: string) => void
 }
 
+
 const playSound = (soundfile: string) => {
   const soundFile = new Audio(soundfile);
   soundFile.play();
 }
-
 export const PinaoKey: React.FC<PinaoKeyProps> = ({ name, soundFile, color, trackRecord }) => {
   color ||= "white";
 

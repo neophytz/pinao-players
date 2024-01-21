@@ -12,8 +12,11 @@ export const Keyboard: React.FC = () => {
 
   return (
     <React.Fragment>
-      <div className='p-10 bg-gray-800 rounded-lg text-center text-white'>
-        {trackPlayed.map((singleNote, index) => <span key={index}>{singleNote}</span>)}
+      <div className='p-10 bg-gray-800 rounded-lg text-center text-white flex items-center justify-between'>
+        <div>
+          {trackPlayed.map((singleNote, index) => <span key={index}>{singleNote}</span>)}
+        </div>
+        {trackPlayed.length !== 0 ? <span onClick={() => setTrackPlayed([])} className='p-3 bg-gray-50 text-black rounded-md cursor-pointer hover:bg-gray-200'>Clear</span> : ""}
       </div>
       <div className='p-2 flex justify-center align-center'>
         {
