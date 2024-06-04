@@ -1,26 +1,22 @@
 import React, { useEffect } from 'react'
+import { playSound } from '../../utils';
 
 export type PinaoKeyColor = "black" | "white";
 
 export interface PinaoKeyProps {
-    name: string;
-    soundFile: string;
-    color?: PinaoKeyColor;
-    trackRecord: (key: string) => void
+  name: string;
+  soundFile: string;
+  color?: PinaoKeyColor;
+  trackRecord: (key: string) => void
 }
 
-const playSound = (soundfile: string) => {
-  const soundFile = new Audio(soundfile);
-  soundFile.play();
-}
-
-export const PinaoKey: React.FC<PinaoKeyProps> = ({name, soundFile, color, trackRecord}) => {
+export const PinaoKey: React.FC<PinaoKeyProps> = ({ name, soundFile, color, trackRecord }) => {
   color ||= "white";
 
 
   useEffect(() => {
     const player = (e: KeyboardEvent) => {
-      if(e.key === name.toLowerCase()){
+      if (e.key === name.toLowerCase()) {
         playSound(soundFile)
         trackRecord(name);
       }
@@ -28,23 +24,24 @@ export const PinaoKey: React.FC<PinaoKeyProps> = ({name, soundFile, color, track
 
     window.addEventListener("keypress", player);
     return () => {
-      window.removeEventListener("keydown", player)
+      // ---- here is the bug --- it should be "keypress" not "keydown"
+      window.removeEventListener("keypress", player)
     }
   }, [name, soundFile, trackRecord])
 
   return (
-    <div 
+    <div
       onClick={() => playSound(soundFile)}
       className={
         `w-20 inline pt-10 text-center 
-        h-96 rounded-lg m-1 outline outline-1 outline-white 
+        rounded-lg m-1 outline outline-1 outline-white 
         transition duration-100
         shadow-md hover:shadow-none
-        ${color === "black" ? "bg-gray-700 hover:bg-gray-950 text-white" : "bg-white"}
-        `
+        ${color === "black" ? "bg-gray-700 hover:bg-gray-950 text-white h-60" : "bg-white h-96"}`
       }
     >
       <span className='uppercase'>{name}</span>
     </div>
+
   )
 }
